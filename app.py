@@ -31,7 +31,9 @@ class TnppProxy(FlaskService):
                         annotations=data["response"]["annotations"])
             if "failure" in data:
                 return Failure(errors=data["failure"]["errors"])
-            return "xxx"
+            error = StandardMessages.generate_elg_service_internalerror(
+                    params=["Invalid response from remote API"])
+            return Failure(errors=[error])
         else:
             error = StandardMessages.generate_elg_service_internalerror(
                     params=[str(response.status_code)])
