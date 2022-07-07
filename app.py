@@ -1,4 +1,3 @@
-import os
 import json
 import requests
 
@@ -14,8 +13,8 @@ class TnppProxy(FlaskService):
     def process_text(self, request: TextRequest):
         headers = {'Content-Type': 'application/json'}
         payload = {
-                "type": "text", 
-                "content": request.content, 
+                "type": "text",
+                "content": request.content,
                 "params": request.params}
         payload = json.dumps(payload)
         try:

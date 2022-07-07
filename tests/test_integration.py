@@ -1,5 +1,4 @@
 import unittest
-import os
 import requests
 import json
 
@@ -98,6 +97,7 @@ class TestIntegration(unittest.TestCase):
         payload = create_payload_with_params(self.steady_text, params)
         response = call_api(payload)
         self.assertIn("udpipe/tokens", response["response"]["annotations"])
+
 
 if __name__ == '__main__':
     unittest.main()
