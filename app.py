@@ -5,7 +5,8 @@ from elg import FlaskService
 from elg.model import TextRequest, AnnotationsResponse, Failure
 from elg.model.base import StandardMessages
 
-endpoint = "http://localhost:8001/process"
+# endpoint = "http://localhost:8001/process"
+endpoint = "http://epsilon-it.utu.fi/tnpp-elg-fi/process"
 
 
 class TnppProxy(FlaskService):
