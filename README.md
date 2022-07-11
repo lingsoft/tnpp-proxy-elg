@@ -178,9 +178,9 @@ Text request can also contain a parameter:
 Boolean parameter `includeConllu` controls the API in outputting the original
 ConLL-U format from the parser. The parameter has a default value of `false`.
 
-### Local installation
+### Local ELG GUI
 
-Use ELG-compatible service locally
+Use ELG-compatible service from GUI locally
 
 ```
 cd elg_local && docker-compose up
