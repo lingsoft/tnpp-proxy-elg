@@ -80,11 +80,11 @@ class TestIntegration(unittest.TestCase):
         self.assertIn("udpipe/conllu", response["response"]["annotations"])
 
     def test_api_response_with_invalid_parameters(self):
-        # TODO ERROR because Failure is returned?
         params = {"includeConllu": "True"}
         payload = create_payload_with_params(self.steady_text, params)
         response = call_api(payload)
-        self.assertNotIn("udpipe/conllu", response["response"]["annotations"])
+        self.assertEqual(response["failure"]["errors"][0]["code"],
+                         "elg.request.invalid")
 
     def test_api_response_with_none_parameters(self):
         params = None
