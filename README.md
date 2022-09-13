@@ -5,14 +5,16 @@
 This repository contains
 [ELG compatible](https://european-language-grid.readthedocs.io/en/stable/all/A3_API/LTInternalAPI.html)
 Flask based ELG proxy for
-[Turku neural parser pipeline](https://turkunlp.org/Turku-neural-parser-pipeline/)
+[Turku neural parser pipeline](https://turkunlp.org/Turku-neural-parser-pipeline/) (TNPP). The proxy requires [ELG compatible Flask based REST API for the TNPP](https://github.com/lingsoft/Turku-neural-parser-pipeline).
 
-Original authors for TNPP:
+Original authors of TNPP:
 Jenna Kanerva and Filip Ginter and Niko Miekka and Akseli Leino and Tapio Salakoski.
+
 Turku Neural Parser Pipeline: An End-to-End System for the CoNLL 2018 Shared Task,
 Proceedings of the CoNLL 2018 Shared Task: Multilingual Parsing from Raw Text to
 Universal Dependencies,
 Association for Computational Linguistics, Brussels, Belgium, 2018.
+
 Source code published under Apache-2.0 License.
 
 This ELG API was developed in EU's CEF project:
