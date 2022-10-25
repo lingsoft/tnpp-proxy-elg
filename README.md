@@ -42,7 +42,7 @@ python -m unittest discover -s tests/ -v
 
 ```
 docker build -t lingsoft/tnpp-proxy:<tagname> .
-docker run --rm -p 8000:8000 --init lingsoft/tnpp-proxy:<tagname>
+docker run --rm -d -p 8000:8000 --init lingsoft/tnpp-proxy:<tagname>
 ```
 
 Or pull directly ready-made image `docker pull lingsoft/tnpp-proxy:<tagname>`.
