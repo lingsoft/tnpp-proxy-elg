@@ -3,7 +3,7 @@ version: "2.0"
 services:
   
   tnpp-proxy:
-    image: "lingsoft/tnpp-proxy:1.0.0-elg"
+    image: "lingsoft/tnpp-proxy:2.8.0-elg"
     environment: []
     restart: always
 
